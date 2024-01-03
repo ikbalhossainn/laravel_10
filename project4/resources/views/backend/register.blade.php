@@ -88,6 +88,7 @@
                         <div class="invalid-feedback">Please choose a username.</div>
                       </div>
                     </div> -->
+                    <!--  -->
 
                     <div class="col-12">
                       <label for="yourPassword" class="form-label">Password</label>
