@@ -31,10 +31,17 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $data = ['name'=> $request->name];
-        if(Category::insert($data)){
+
+        $model = new Category();
+
+        if($model->insert($data)){
             return redirect('category')->with('msg', 'Successfully Category Added');
-       }
+            // or (no need to create object if using scope resulation)
+    //     if(Category::insert($data)){
+    //         return redirect('category')->with('msg', 'Successfully Category Added');
+    //    }
     }
+}
 
     /**
      * Display the specified resource.
