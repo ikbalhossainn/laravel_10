@@ -53,7 +53,12 @@
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Category</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="category" class="form-control">
+                                        <select name="category" class="form-select" id="">
+                                            <option selected>Select One</option>
+                                            @foreach($cats as $cat)
+                                            <option value="{{$cat->id}}">{{$cat->name}}</option>
+                                            @endforeach
+                                        </select>
                                     </div>
                                 </div>
                                 

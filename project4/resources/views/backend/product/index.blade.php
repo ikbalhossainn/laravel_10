@@ -37,7 +37,7 @@
             </thead>
             <tbody>
               <!-- loop comes from database -->
-                @foreach($cats as $cat)
+                @foreach($products as $cat)
               <tr>
                 <td>{{$cat->id}}</td>
                 <td>{{$cat->name}}</td>

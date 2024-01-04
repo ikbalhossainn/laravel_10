@@ -16,7 +16,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $data['products'] = Product::All();
+        return view('backend.product.index', $data);
     }
 
     /**
@@ -37,7 +38,7 @@ class ProductController extends Controller
             'name'=> $request->name,
             'description'=> $request->description,
             'price'=> $request->price,
-            // 'category_id'=> $request->category,
+            'category_id'=> $request->category,
         ];
 
         $model = new Product();
