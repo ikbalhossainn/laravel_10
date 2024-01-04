@@ -12,10 +12,10 @@
       <!-- Products Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#product-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-layout-text-window-reverse"></i><span>Products Manage</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="product-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="{{URL('products')}}">
               <i class="bi bi-circle"></i><span>All Products</span>
@@ -30,6 +30,28 @@
         </ul>
       </li>
        <!--End Products Nav -->
+
+       <!-- Start Category Nav -->
+       <!-- data-bs-target= "#category-nav" should be equal to ul id="category-nav" -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#category-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Category Manage</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="category-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="{{URL('category')}}">
+              <i class="bi bi-circle"></i><span>All Categories</span>
+            </a>
+          </li>
+          <li>
+            <!-- <a href="{{URL('product/create')}}"> path after click New Products -->
+            <a href="{{URL('category/create')}}">
+              <i class="bi bi-circle"></i><span>New Category</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+       <!-- End Category Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
