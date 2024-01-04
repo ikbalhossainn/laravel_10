@@ -5,6 +5,8 @@ namespace App\Http\Controllers\backend;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB; // if you connect db here then store method would be => DB::table('categories')->insert($data)
+
 
 class CategoryController extends Controller
 {
