@@ -17,7 +17,7 @@
         </a>
         <ul id="product-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="{{URL('products')}}">
+            <a href="{{URL('product')}}">
               <i class="bi bi-circle"></i><span>All Products</span>
             </a>
           </li>

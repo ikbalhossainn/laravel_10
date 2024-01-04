@@ -28,15 +28,22 @@
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Name</th>  
+                <th>Name</th>
+                <th>Description</th>  
+                <th>Price</th>
+                <th>Category</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody>
+              <!-- loop comes from database -->
                 @foreach($cats as $cat)
               <tr>
                 <td>{{$cat->id}}</td>
                 <td>{{$cat->name}}</td>
+                <td>{{$cat->description}}</td>
+                <td>{{$cat->price}}</td>
+                <td>{{$cat->category_id}}</td>
                 <td>Edit | Delete</td>
               </tr>
               @endforeach
