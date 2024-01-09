@@ -26,13 +26,15 @@ class AdminController extends Controller
 
     public function store(Request $request){
         $user =$request->all();
-        dd($user);
+       // dd($user);  // to check input data
 
         if(Auth::guard('admin')->attempt(['email'=> $user['email'],
         'password'=> $user['password']])){
-            echo "All are ok";
+            // echo "All are ok";
+            return redirect()->route('admin.dashboard');
         } else {
-            echo 'Problem';
+            // echo 'Problem';
+            return view('admin.login');
         }
     }
 }

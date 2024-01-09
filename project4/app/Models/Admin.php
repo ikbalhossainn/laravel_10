@@ -9,8 +9,9 @@ use Illuminate\Notifications\Notifiable; // copy from User.php
 use Laravel\Sanctum\HasApiTokens; // copy from User.php
 
 
-class Admin extends Model
+class Admin extends Authenticatable
 {
+    use HasApiTokens, HasFactory, Notifiable;
     // copy from User.php
       /**
      * The attributes that are mass assignable.
