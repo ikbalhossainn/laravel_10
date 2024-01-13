@@ -17,6 +17,7 @@ class ProductController extends Controller
     public function index()
     {
         $data['products'] = Product::All();
+        //dd($products);
         return view('backend.product.index', $data);
     }
 

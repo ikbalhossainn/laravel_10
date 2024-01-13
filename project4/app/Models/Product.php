@@ -13,7 +13,7 @@ class Product extends Model
     protected $fillable = ['name', 'description', 'price', 'category_id'];
 
 
-    public function category(): BelongsTo{
+    public function category(): BelongsTo{ // function name ('category') will be called in resources/views/backend/product/index.blade.php like "<td>{{$cat->category->name}}</td>"
         return $this->belongsTo(Category::class);
     }
 }

@@ -12,7 +12,7 @@ class Category extends Model
     use HasFactory;
     protected $fillable = ['name'];
 
-    public function product(): HasMany{
+    public function product(): HasMany{ // for making relationship
         return $this->hasMany(Product::class);
     }
 

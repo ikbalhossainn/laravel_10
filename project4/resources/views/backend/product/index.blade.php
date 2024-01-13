@@ -43,7 +43,12 @@
                 <td>{{$cat->name}}</td>
                 <td>{{$cat->description}}</td>
                 <td>{{$cat->price}}</td>
-                <td>{{$cat->category_id}}</td>
+                <!-- <td>{{$cat->category_id}}</td> for showing id -->
+                <td>{{$cat->category->name}}</td>
+                <!-- comes from Models/Product.php 
+                "public function category(): BelongsTo{ 
+                    return $this->belongsTo(Category::class);
+                        }" -->
                 <td>Edit | Delete</td>
               </tr>
               @endforeach
