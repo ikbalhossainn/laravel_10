@@ -80,23 +80,29 @@
                                     </div>
                                 </fieldset>
                                 <div class="row mb-3">
-                                    <legend class="col-form-label col-sm-2 pt-0">Checkboxes</legend>
+                                    <legend class="col-form-label col-sm-2 pt-0">Tags</legend>
                                     <div class="col-sm-10">
 
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                            <input class="form-check-input" name="tags[]" value="organic_food" type="checkbox" id="gridCheck1">
                                             <label class="form-check-label" for="gridCheck1">
-                                                Example checkbox
+                                                Organic Food
                                             </label>
                                         </div>
 
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                                            <input class="form-check-input" type="checkbox" name="tags[]" value="pure_product" id="gridCheck2">
                                             <label class="form-check-label" for="gridCheck2">
-                                                Example checkbox 2
+                                                Pure Product
                                             </label>
                                         </div>
 
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputNumber" class="col-sm-2 col-form-label">Photo Upload</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="file" name="photo" id="formFile">
                                     </div>
                                 </div>
                                 <div class="row mb-3">

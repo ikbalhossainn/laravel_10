@@ -35,17 +35,28 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $data = [
-            'name'=> $request->name,
-            'description'=> $request->description,
-            'price'=> $request->price,
-            'category_id'=> $request->category,
-        ];
 
-        $model = new Product();
-          if($model->insert($data)){
-            return redirect('product')->with('msg', 'Successfully Product Added');
-          }
+        $validate = $request->validate([  // left side = form name
+            'name' => 'required | min(4)',
+            'description' => 'required | min(6)',
+            'price' => 'required | numeric',
+            'category' => 'required',
+            'photo' => 'mimes:jpg,jpeg,png',
+        ]);
+
+        if ($validate) {
+            $data = [  // left side = database name
+                'name' => $request->name,
+                'description' => $request->description,
+                'price' => $request->price,
+                'category_id' => $request->category,
+            ];
+
+            $model = new Product();
+            if ($model->insert($data)) {
+                return redirect('product')->with('msg', 'Successfully Product Added');
+            }
+        }
     }
 
     /**
