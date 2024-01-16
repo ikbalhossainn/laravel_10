@@ -37,8 +37,8 @@ class ProductController extends Controller
     {
 
         $validate = $request->validate([  // left side = form name
-            'name' => 'required | min(4)',
-            'description' => 'required | min(6)',
+            'name' => 'required | min:4',
+            'description' => 'required | min:6',
             'price' => 'required | numeric',
             'category' => 'required',
             'photo' => 'mimes:jpg,jpeg,png',
