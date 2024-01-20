@@ -44,6 +44,8 @@ class ProductController extends Controller
             'photo' => 'mimes:jpg,jpeg,png',
         ]);
 
+        // dd($request->all()) // for checking everything should be in comment
+
         if ($validate) {
             $data = [  // left side = database name
                 'name' => $request->name,

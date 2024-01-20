@@ -25,20 +25,29 @@
                         <div class="card-body">
                             <h5 class="card-title">Product Entry</h5>
 
+                            @if($errors->any())
+                            <div class="alert alert-danger">
+                                @foreach($errors->all() as $err)
+                                <li>{{$err}}</li>
+                                @endforeach
+                            </div>
+
+                            @endif
+
                             <!-- General Form Elements -->
                             <form method="post" action="{{route('product.store')}}">
                                 @csrf
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Name</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="name" class="form-control">
+                                        <input type="text" name="name" class="form-control" value="{{old('name')}}">
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Description</label>
                                     <div class="col-sm-10">
-                                        <textarea name="description" id="" class="form-control"></textarea>
+                                        <textarea name="description" id="" class="form-control">{{old('description')}}</textarea>
                                     </div>
                                     <!-- class="quill-editor-full" -->
                                 </div>
@@ -46,7 +55,7 @@
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Price</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="price" class="form-control">
+                                        <input type="text" name="price" class="form-control" value="{{old('price')}}">
                                     </div>
                                 </div>
 
@@ -56,7 +65,7 @@
                                         <select name="category" class="form-select" id="">
                                             <option selected>Select One</option>
                                             @foreach($cats as $cat)
-                                            <option value="{{$cat->id}}">{{$cat->name}}</option>
+                                            <option value="{{$cat->id}}" {{old('category') == $cat->id ?'selected':''}}>{{$cat->name}} </option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -66,13 +75,13 @@
                                     <legend class="col-form-label col-sm-2 pt-0">Product Status</legend>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="1" checked>
+                                            <input class="form-check-input" type="radio" name="availability" id="gridRadios1" value="1" {{old('availability') ? 'checked':''}}>
                                             <label class="form-check-label" for="gridRadios1">
-                                                Available
+                                                Available 
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="0">
+                                            <input class="form-check-input" type="radio" name="availability" id="gridRadios2" value="0" {{old('availability') ==0 ? 'checked':''}}>
                                             <label class="form-check-label" for="gridRadios2">
                                                 Not Available
                                             </label>
@@ -84,7 +93,7 @@
                                     <div class="col-sm-10">
 
                                         <div class="form-check">
-                                            <input class="form-check-input" name="tags[]" value="organic_food" type="checkbox" id="gridCheck1">
+                                            <input class="form-check-input" name="tags[]"  type="checkbox" id="gridCheck1" value="organic_food">
                                             <label class="form-check-label" for="gridCheck1">
                                                 Organic Food
                                             </label>
@@ -102,7 +111,7 @@
                                 <div class="row mb-3">
                                     <label for="inputNumber" class="col-sm-2 col-form-label">Photo Upload</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="file" name="photo" id="formFile">
+                                        <input class="form-control" type="file" name="photo" id="formFile" value="{{old('name')}}">
                                     </div>
                                 </div>
                                 <div class="row mb-3">
