@@ -35,7 +35,8 @@
                             @endif
 
                             <!-- General Form Elements -->
-                            <form method="post" action="{{route('product.store')}}">
+                            <form method="post" action="{{route('product.store')}}" enctype="multipart/form-data">
+                                <!-- enctype="multipart/form-data" // for photo -->
                                 @csrf
                                 <div class="row mb-3">
                                     <label for="inputText" class="col-sm-2 col-form-label">Name</label>
@@ -93,14 +94,14 @@
                                     <div class="col-sm-10">
 
                                         <div class="form-check">
-                                            <input class="form-check-input" name="tags[]"  type="checkbox" id="gridCheck1" value="organic_food">
+                                            <input class="form-check-input" name="tags[]"  type="checkbox" id="gridCheck1" value="organic_food" {{in_array('organic_food', old('tags', [] )) ? 'checked' : '' }}>
                                             <label class="form-check-label" for="gridCheck1">
                                                 Organic Food
                                             </label>
                                         </div>
 
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="tags[]" value="pure_product" id="gridCheck2">
+                                            <input class="form-check-input" type="checkbox" name="tags[]" id="gridCheck2" value="pure_product" {{in_array('pure_product', old('tags', [] )) ? 'checked' : '' }}>
                                             <label class="form-check-label" for="gridCheck2">
                                                 Pure Product
                                             </label>
@@ -111,7 +112,7 @@
                                 <div class="row mb-3">
                                     <label for="inputNumber" class="col-sm-2 col-form-label">Photo Upload</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="file" name="photo" id="formFile" value="{{old('name')}}">
+                                        <input class="form-control" type="file" name="photo" id="formFile" value="{{old('photo')}}">
                                     </div>
                                 </div>
                                 <div class="row mb-3">

@@ -44,7 +44,17 @@ class ProductController extends Controller
             'photo' => 'mimes:jpg,jpeg,png',
         ]);
 
+        $filename = time() . "." . $request->photo->extension();
+
         // dd($request->all()) // for checking everything should be in comment
+        // echo $request->photo->extension();
+        // echo "<br>";
+        // echo public_path('images');
+        // echo "<br>";
+        // echo $request->photo->path();
+        // echo "<br>";
+        // echo $request->photo->stores('images');
+        // dd($request->photo);
 
         if ($validate) {
             $data = [  // left side = database name
@@ -52,12 +62,18 @@ class ProductController extends Controller
                 'description' => $request->description,
                 'price' => $request->price,
                 'category_id' => $request->category,
+                'availability' => $request->availability,
+                'tag'=> $request->tags,
+            //  'tag'=> $request->input('tags'),
+                'image' => $filename,
+                //'image' => public_path('images/'. $filename),
             ];
 
-            $model = new Product();
-            if ($model->insert($data)) {
-                return redirect('product')->with('msg', 'Successfully Product Added');
-            }
+                $model = new Product();
+                    if ($model->create($data)) {
+                        $request->photo->move(public_path('images'), $filename);
+                        return redirect('product')->with('msg', 'Successfully Product Added');
+                    }
         }
     }
 
