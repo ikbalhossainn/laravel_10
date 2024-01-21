@@ -46,7 +46,7 @@
                   <td>{{$cat->name}}</td>
                   <td>{{$cat->description}}</td>
                   <td> <img src="{{'images/'. $cat->image}}" width="100"> </td>
-                  <td>{{implode(", ", $cat->tags) ?? 'NO Data'}}</td>
+                  <td>{{ implode(",", $cat->tags) }}</td>
                   <td>{{$cat->price}}</td>
                   <!-- <td>{{$cat->category_id}}</td> for showing id -->
                   <td>{{$cat->category->name ?? 'N/A'}}</td>
@@ -56,7 +56,11 @@
                         }" -->
 
                   <td>{{$cat->availability}}</td>
-                  <td>Edit | Delete</td>
+                  <td>
+                    <a href="{{route('product.edit', $cat->id)}}">Edit</a>   | 
+                    
+                  <a href="{{route('product.delete', $cat->id)}}" onclick="return confirm('Are you sure to delete?')">Delete</a>
+                </td>
                 </tr>
                 @endforeach
               </tbody>

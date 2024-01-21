@@ -49,6 +49,7 @@
                                     <label for="inputText" class="col-sm-2 col-form-label">Description</label>
                                     <div class="col-sm-10">
                                         <textarea name="description" id="" class="form-control">{{old('description')}}</textarea>
+                                        <!-- class="form-control tinymce-editor -->
                                     </div>
                                     <!-- class="quill-editor-full" -->
                                 </div>
@@ -78,7 +79,7 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="availability" id="gridRadios1" value="1" {{old('availability') ? 'checked':''}}>
                                             <label class="form-check-label" for="gridRadios1">
-                                                Available 
+                                                Available
                                             </label>
                                         </div>
                                         <div class="form-check">
@@ -94,7 +95,7 @@
                                     <div class="col-sm-10">
 
                                         <div class="form-check">
-                                            <input class="form-check-input" name="tags[]"  type="checkbox" id="gridCheck1" value="organic_food" {{in_array('organic_food', old('tags', [] )) ? 'checked' : '' }}>
+                                            <input class="form-check-input" name="tags[]" type="checkbox" id="gridCheck1" value="organic_food" {{in_array('organic_food', old('tags', [] )) ? 'checked' : '' }}>
                                             <label class="form-check-label" for="gridCheck1">
                                                 Organic Food
                                             </label>

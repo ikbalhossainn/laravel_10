@@ -63,7 +63,7 @@ class ProductController extends Controller
                 'price' => $request->price,
                 'category_id' => $request->category,
                 'availability' => $request->availability,
-                'tag'=> $request->tags,
+                'tags'=> $request->tags,
             //  'tag'=> $request->input('tags'),
                 'image' => $filename,
                 //'image' => public_path('images/'. $filename),
@@ -90,7 +90,9 @@ class ProductController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $products = Product::find($id);
+        $cats = Category::all();
+        return view('backend.product.edit', compact('products', 'cats'));
     }
 
     /**
@@ -104,8 +106,11 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function delete(string $pid)
     {
-        //
+        // echo $id;
+        $product = Product::find($pid);
+        $product->delete();
+        return redirect('product')->with('msg', "Successfully Deleted");
     }
 }
