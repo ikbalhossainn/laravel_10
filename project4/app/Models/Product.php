@@ -19,12 +19,12 @@ class Product extends Model
 
     public function setTagsAttribute($value)
     {
-        $this->attributes['tags'] = json_encode($value); // encode converts array to string
+        $this->attributes['tags'] = json_encode($value); // encode converts string to array 
     }
 
-    public function getTagsAttribute($value)  // decode converts string to array
+    public function getTagsAttribute($value)  // decode converts array to string 
     {
-         return $this->attributes['tags'] = json_decode($value);
-        // return is_array($value) ? $value : json_decode($value, true);
+        // return $this->attributes['tags'] = json_decode($value);
+         return is_array($value) ? $value : json_decode($value, true);
     }
 }

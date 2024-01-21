@@ -35,7 +35,7 @@
                             @endif
 
                             <!-- General Form Elements -->
-                            <form method="post" action="{{route('product.update, $products->id')}}" enctype="multipart/form-data">
+                            <form method="post" action="{{route('product.update', $products->id)}}" enctype="multipart/form-data">
                                 <!-- enctype="multipart/form-data" // for photo -->
                                 @csrf
                                 <div class="row mb-3">
@@ -67,8 +67,9 @@
                                         <select name="category" class="form-select" id="">
                                             <option selected>Select One</option>
                                             @foreach($cats as $cat)
-                                            <option value="{{$cat->id}}" {{old('category') == $cat->id ?'selected':''}}>{{$cat->name}} </option>
+                                            <option value="{{$cat->id}}" @selected(old('category', $products->category_id) == $cat->id)>{{$cat->name}} </option>
                                             @endforeach
+                                            <!-- {{old('category', $products->category_id) == $cat->id ? 'selected' : ''}} -->
                                         </select>
                                     </div>
                                 </div>
@@ -95,14 +96,14 @@
                                     <div class="col-sm-10">
 
                                         <div class="form-check">
-                                            <input class="form-check-input" name="tags[]" type="checkbox" id="gridCheck1" value="organic_food" {{in_array('organic_food', old('tags', [] )) ? 'checked' : '' }}>
+                                            <input class="form-check-input" name="tags[]" type="checkbox" id="gridCheck1" value="organic_food" @checked(old('tags', in_array('organic_food', $products->tags)) == 'organic_food')>
                                             <label class="form-check-label" for="gridCheck1">
                                                 Organic Food
                                             </label>
                                         </div>
 
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="tags[]" id="gridCheck2" value="pure_product" {{in_array('pure_product', old('tags', [] )) ? 'checked' : '' }}>
+                                            <input class="form-check-input" type="checkbox" name="tags[]" id="gridCheck2" value="pure_product" @checked(old('tags', in_array('pure_product', $products->tags)) == 'pure_product')>
                                             <label class="form-check-label" for="gridCheck2">
                                                 Pure Product
                                             </label>
@@ -116,6 +117,9 @@
                                         <input class="form-control" type="file" name="photo" id="formFile" value="{{old('photo')}}">
                                     </div>
                                 </div>
+
+                                <img src="{{asset('images/' . $products->image)}}" alt="" width="100">
+
                                 <div class="row mb-3">
                                     <label class="col-sm-2 col-form-label"></label>
                                     <div class="col-sm-10">
