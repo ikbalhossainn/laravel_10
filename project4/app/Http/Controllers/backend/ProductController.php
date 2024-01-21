@@ -63,17 +63,17 @@ class ProductController extends Controller
                 'price' => $request->price,
                 'category_id' => $request->category,
                 'availability' => $request->availability,
-                'tags'=> $request->tags,
-            //  'tag'=> $request->input('tags'),
+                'tags' => $request->tags,
+                //  'tag'=> $request->input('tags'),
                 'image' => $filename,
                 //'image' => public_path('images/'. $filename),
             ];
 
-                $model = new Product();
-                    if ($model->create($data)) {
-                        $request->photo->move(public_path('images'), $filename);
-                        return redirect('product')->with('msg', 'Successfully Product Added');
-                    }
+            $model = new Product();
+            if ($model->create($data)) {
+                $request->photo->move(public_path('images'), $filename);
+                return redirect('product')->with('msg', 'Successfully Product Added');
+            }
         }
     }
 
