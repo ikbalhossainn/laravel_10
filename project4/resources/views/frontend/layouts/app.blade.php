@@ -42,6 +42,7 @@
         <!-- Begin Slider Area -->
                 @yield('content')
         <!-- Begin Footer Area -->
+        
         @include('frontend.layouts.footer')
         <!-- Footer Area End Here -->
 
