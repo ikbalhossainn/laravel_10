@@ -114,7 +114,7 @@
 
                                             </li>
                                             <li>
-                                                <a href="about.html">About</a>
+                                                <a href="/about">About</a>
                                             </li>
                                             <li class="megamenu-holder">
                                                 <a href="javascript:void(0)">Shop
@@ -170,13 +170,13 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="faq.html">FAQs</a>
+                                                <a href="/faq">FAQs</a>
                                             </li>
                                             <li>
-                                                <a href="blog-left-sidebar.html">Blog </a>
+                                                <a href="/blog">Blog </a>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="/contact">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>

@@ -16,7 +16,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.layouts.app');
+    return view('frontend.home');
+});
+Route::get('about', function () {
+    return view('frontend.about');
+});
+Route::get('faq', function () {
+    return view('frontend.faq');
+});
+Route::get('blog', function () {
+    return view('frontend.blog');
+});
+Route::get('contact', function () {
+    return view('frontend.contact');
 });
 
 Route::get('/dashboard', function () {

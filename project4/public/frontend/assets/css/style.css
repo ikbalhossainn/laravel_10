@@ -15618,8 +15618,10 @@ ul {
   padding: 0;
   list-style: none;
 }
-
-img {
+img{
+  width: 100%;
+}
+.header-logo img {
   max-width: 150px;
 }
 
