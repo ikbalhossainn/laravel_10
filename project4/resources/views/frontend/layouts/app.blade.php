@@ -36,7 +36,7 @@
     <div class="main-wrapper">
 
         <!-- Begin Main Header Area -->
-             @include('frontend.layouts.header')
+        @include('frontend.layouts.header')
         <!-- Main Header Area End Here -->
 
         <!-- Begin Slider Area -->
@@ -534,7 +534,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-8-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-8-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -581,7 +581,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-1-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-1-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -624,7 +624,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-2-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-2-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -667,7 +667,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-3-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-3-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -710,7 +710,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-4-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-4-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -753,7 +753,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-5-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-5-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -796,7 +796,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-6-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-6-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -839,7 +839,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-7-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-7-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -882,7 +882,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-8-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-8-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -929,7 +929,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-1-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-1-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -972,7 +972,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-2-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-2-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1015,7 +1015,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-3-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-3-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1058,7 +1058,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-4-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-4-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1101,7 +1101,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-5-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-5-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1144,7 +1144,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-6-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-6-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1187,7 +1187,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-7-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-7-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1230,7 +1230,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-8-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-8-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1277,7 +1277,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-1-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-1-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1320,7 +1320,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-2-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-2-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1363,7 +1363,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-3-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-3-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1406,7 +1406,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-4-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-4-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1449,7 +1449,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-5-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-5-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1492,7 +1492,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-6-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-6-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1535,7 +1535,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-7-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-7-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1578,7 +1578,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-8-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-8-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1625,7 +1625,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-1-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-1-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1668,7 +1668,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-2-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-2-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1711,7 +1711,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-3-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-3-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1754,7 +1754,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-4-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-4-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1797,7 +1797,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-5-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-5-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1840,7 +1840,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-6-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-6-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1883,7 +1883,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-7-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-7-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1926,7 +1926,7 @@
                                         <div class="product-item">
                                             <div class="product-img img-zoom-effect">
                                                 <a href="single-product.html">
-                                                    <img class="img-full" src="frontend/assets/images/product/medium-size/1-8-270x300.jpg" alt="Product Images">
+                                                    <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-8-270x300.jpg')}}" alt="Product Images">
                                                 </a>
                                                 <div class="product-add-action">
                                                     <ul>
@@ -1981,7 +1981,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="banner-item">
                             <div class="banner-img img-zoom-effect">
-                                <img class="img-full" src="frontend/assets/images/banner/1-1-370x250.jpg" alt="Banner Image">
+                                <img class="img-full" src="{{asset('frontend/assets/images/banner/1-1-370x250.jpg')}}" alt="Banner Image">
                                 <div class="inner-content">
                                     <h5 class="offer">-10% Off</h5>
                                     <h4 class="title mb-5">Bell Pepper<br>Orange</h4>
@@ -1995,7 +1995,7 @@
                     <div class="col-lg-4 col-md-6 pt-6 pt-md-0">
                         <div class="banner-item">
                             <div class="banner-img img-zoom-effect">
-                                <img class="img-full" src="frontend/assets/images/banner/1-2-370x250.jpg" alt="Banner Image">
+                                <img class="img-full" src="{{asset('frontend/assets/images/banner/1-2-370x250.jpg')}}" alt="Banner Image">
                                 <div class="inner-content">
                                     <h5 class="offer">-20% Off</h5>
                                     <h4 class="title mb-5">Fruit Juice<br>Package</h4>
@@ -2009,7 +2009,7 @@
                     <div class="col-lg-4 col-md-6 pt-6 pt-lg-0">
                         <div class="banner-item">
                             <div class="banner-img img-zoom-effect">
-                                <img class="img-full" src="frontend/assets/images/banner/1-3-370x250.jpg" alt="Banner Image">
+                                <img class="img-full" src="{{asset('frontend/assets/images/banner/1-3-370x250.jpg')}}" alt="Banner Image">
                                 <div class="inner-content">
                                     <h5 class="offer">-30% Off</h5>
                                     <h4 class="title mb-5">Full Fresh<br>Vegetable</h4>
@@ -2040,7 +2040,7 @@
                                     <div class="product-item">
                                         <div class="product-img img-zoom-effect">
                                             <a href="single-product.html">
-                                                <img class="img-full" src="frontend/assets/images/product/medium-size/1-9-270x300.jpg" alt="Product Images">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-9-270x300.jpg')}}" alt="Product Images">
                                             </a>
                                             <div class="product-add-action">
                                                 <ul>
@@ -2083,7 +2083,7 @@
                                     <div class="product-item">
                                         <div class="product-img img-zoom-effect">
                                             <a href="single-product.html">
-                                                <img class="img-full" src="frontend/assets/images/product/medium-size/1-10-270x300.jpg" alt="Product Images">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-10-270x300.jpg')}}" alt="Product Images">
                                             </a>
                                             <div class="product-add-action">
                                                 <ul>
@@ -2126,7 +2126,7 @@
                                     <div class="product-item">
                                         <div class="product-img img-zoom-effect">
                                             <a href="single-product.html">
-                                                <img class="img-full" src="frontend/assets/images/product/medium-size/1-11-270x300.jpg" alt="Product Images">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-11-270x300.jpg')}}" alt="Product Images">
                                             </a>
                                             <div class="product-add-action">
                                                 <ul>
@@ -2169,7 +2169,7 @@
                                     <div class="product-item">
                                         <div class="product-img img-zoom-effect">
                                             <a href="single-product.html">
-                                                <img class="img-full" src="frontend/assets/images/product/medium-size/1-12-270x300.jpg" alt="Product Images">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/product/medium-size/1-12-270x300.jpg')}}" alt="Product Images">
                                             </a>
                                             <div class="product-add-action">
                                                 <ul>
@@ -2287,7 +2287,7 @@
                                     <div class="product-list-item">
                                         <div class="product-img img-zoom-effect">
                                             <a href="single-product.html">
-                                                <img class="img-full" src="frontend/assets/images/product/small-size/1-1-112x124.jpg" alt="Product Images">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/product/small-size/1-1-112x124.jpg')}}" alt="Product Images">
                                             </a>
                                         </div>
                                         <div class="product-content">
@@ -2322,7 +2322,7 @@
                                     <div class="product-list-item">
                                         <div class="product-img img-zoom-effect">
                                             <a href="single-product.html">
-                                                <img class="img-full" src="frontend/assets/images/product/small-size/1-2-112x124.jpg" alt="Product Images">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/product/small-size/1-2-112x124.jpg')}}" alt="Product Images">
                                             </a>
                                         </div>
                                         <div class="product-content">
@@ -2357,7 +2357,7 @@
                                     <div class="product-list-item">
                                         <div class="product-img img-zoom-effect">
                                             <a href="single-product.html">
-                                                <img class="img-full" src="frontend/assets/images/product/small-size/1-3-112x124.jpg" alt="Product Images">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/product/small-size/1-3-112x124.jpg')}}" alt="Product Images">
                                             </a>
                                         </div>
                                         <div class="product-content">
@@ -2392,7 +2392,7 @@
                                     <div class="product-list-item">
                                         <div class="product-img img-zoom-effect">
                                             <a href="single-product.html">
-                                                <img class="img-full" src="frontend/assets/images/product/small-size/1-4-112x124.jpg" alt="Product Images">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/product/small-size/1-4-112x124.jpg')}}" alt="Product Images">
                                             </a>
                                         </div>
                                         <div class="product-content">
@@ -2427,7 +2427,7 @@
                                     <div class="product-list-item">
                                         <div class="product-img img-zoom-effect">
                                             <a href="single-product.html">
-                                                <img class="img-full" src="frontend/assets/images/product/small-size/1-5-112x124.jpg" alt="Product Images">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/product/small-size/1-5-112x124.jpg')}}" alt="Product Images">
                                             </a>
                                         </div>
                                         <div class="product-content">
@@ -2519,7 +2519,7 @@
                                     <div class="blog-item">
                                         <div class="blog-img img-zoom-effect">
                                             <a href="blog-detail-left-sidebar.html">
-                                                <img class="img-full" src="frontend/assets/images/blog/medium-size/1-1-370x315.jpg" alt="Blog Image">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/blog/medium-size/1-1-370x315.jpg')}}" alt="Blog Image">
                                             </a>
                                         </div>
                                         <div class="blog-content">
@@ -2528,11 +2528,11 @@
                                                     <li class="date"><i class="fa fa-calendar-o me-2"></i>May 21, 2021</li>
                                                     <li>
                                                         <span class="comments me-3">
-                                                        <a href="javascript:void(0)">2 Comments</a>
-                                                    </span>
+                                                            <a href="javascript:void(0)">2 Comments</a>
+                                                        </span>
                                                         <span class="link-share">
-                                                        <a href="javascript:void(0)">Share</a>
-                                                    </span>
+                                                            <a href="javascript:void(0)">Share</a>
+                                                        </span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -2550,7 +2550,7 @@
                                     <div class="blog-item">
                                         <div class="blog-img img-zoom-effect">
                                             <a href="blog-detail-left-sidebar.html">
-                                                <img class="img-full" src="frontend/assets/images/blog/medium-size/1-2-370x315.jpg" alt="Blog Image">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/blog/medium-size/1-2-370x315.jpg')}}" alt="Blog Image">
                                             </a>
                                         </div>
                                         <div class="blog-content">
@@ -2559,11 +2559,11 @@
                                                     <li class="date"><i class="fa fa-calendar-o me-2"></i>May 21, 2021</li>
                                                     <li>
                                                         <span class="comments me-3">
-                                                        <a href="javascript:void(0)">2 Comments</a>
-                                                    </span>
+                                                            <a href="javascript:void(0)">2 Comments</a>
+                                                        </span>
                                                         <span class="link-share">
-                                                        <a href="javascript:void(0)">Share</a>
-                                                    </span>
+                                                            <a href="javascript:void(0)">Share</a>
+                                                        </span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -2581,7 +2581,7 @@
                                     <div class="blog-item">
                                         <div class="blog-img img-zoom-effect">
                                             <a href="blog-detail-left-sidebar.html">
-                                                <img class="img-full" src="frontend/assets/images/blog/medium-size/1-3-370x315.jpg" alt="Blog Image">
+                                                <img class="img-full" src="{{asset('frontend/assets/images/blog/medium-size/1-3-370x315.jpg')}}" alt="Blog Image">
                                             </a>
                                         </div>
                                         <div class="blog-content">
@@ -2590,11 +2590,11 @@
                                                     <li class="date"><i class="fa fa-calendar-o me-2"></i>May 21, 2021</li>
                                                     <li>
                                                         <span class="comments me-3">
-                                                        <a href="javascript:void(0)">2 Comments</a>
-                                                    </span>
+                                                            <a href="javascript:void(0)">2 Comments</a>
+                                                        </span>
                                                         <span class="link-share">
-                                                        <a href="javascript:void(0)">Share</a>
-                                                    </span>
+                                                            <a href="javascript:void(0)">Share</a>
+                                                        </span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -2620,7 +2620,7 @@
         <!-- Blog Area End Here -->
 
         <!-- Begin Footer Area -->
-              @include('frontend.layouts.footer')
+        @include('frontend.layouts.footer')
         <!-- Footer Area End Here -->
 
         <!-- Begin Scroll To Top -->
