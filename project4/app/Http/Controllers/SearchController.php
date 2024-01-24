@@ -16,7 +16,7 @@ class SearchController extends Controller
         } else{
             $products = Product::all();
         }
-        $products = Product::all(); // you can write another way without call variable and compact
+        $products = Product::all(); 
         return view('search', compact('products', 'categories'));
     }
 }
