@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;  // need to add
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,6 +48,12 @@ Route::post('admin/login',[AdminController::class, 'store'])->name('adminLogin')
 Route::get('admin/dashboard',[AdminController::class, 'dashboard'])->name('admin.dashboard');
 
 Route::get('/', [HomeController::class, 'index']);
+
+// For searching
+// Route::get('findproducts', function(){
+//     return view('search'); // only for show(static). without controller
+// });
+Route::get('findproducts', [SearchController::class, 'Search']);
 
 
 require __DIR__.'/auth.php';
