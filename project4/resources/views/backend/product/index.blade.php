@@ -57,10 +57,12 @@
 
                   <td>{{$cat->availability}}</td>
                   <td>
-                    <a href="{{route('product.edit', $cat->id)}}">Edit</a>   | 
-                    
-                  <a href="{{route('product.delete', $cat->id)}}" onclick="return confirm('Are you sure to delete?')">Delete</a>
-                </td>
+                    <a class="btn btn-success" href="{{route('product.edit', $cat->id)}}">Edit</a> |
+
+                    <a class="btn btn-danger" href="{{route('product.delete', $cat->id)}}" onclick="return confirm('Are you sure to delete?')">Delete</a> |
+
+                    <a class="btn btn-success" href="{{route('add.to.cart', $cat->id)}}">Add to Cart</a>
+                  </td>
                 </tr>
                 @endforeach
               </tbody>

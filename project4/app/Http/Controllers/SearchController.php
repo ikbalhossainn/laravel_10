@@ -12,11 +12,12 @@ class SearchController extends Controller
         $categories = Category::all();
 
         if($request->filled('search')){
-            $products = Product::search($request->search)->get();
+            // $products = Product::search($request->search)->get(); 
+            $products = Product::search($request->search)->where('category_id', $request->cat)->get();
         } else{
             $products = Product::all();
         }
-        $products = Product::all(); 
+        // $products = Product::all(); 
         return view('search', compact('products', 'categories'));
     }
 }

@@ -2,8 +2,9 @@
 
 use App\Http\Controllers\AdminController;  // need to add
 use App\Http\Controllers\frontend\HomeController;
+use App\Http\Controllers\frontend\ProductController; // need to add for cart
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\SearchController;
+use App\Http\Controllers\SearchController; // need to add for searching
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -54,6 +55,13 @@ Route::get('/', [HomeController::class, 'index']);
 //     return view('search'); // only for show(static). without controller
 // });
 Route::get('findproducts', [SearchController::class, 'Search']);
+
+// Add to Cart
+
+Route::get('cart', [ProductController::class, 'cart'])->name('cart');
+Route::get('add-to-cart/{id}', [ProductController::class, 'addToCart'])->name('add.to.cart');
+Route::patch('update-cart', [ProductController::class, 'update'])->name('update.cart');
+Route::delete('remove-from-cart', [ProductController::class, 'remove'])->name('remove.from.cart');
 
 
 require __DIR__.'/auth.php';

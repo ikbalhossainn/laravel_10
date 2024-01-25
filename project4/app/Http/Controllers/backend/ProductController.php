@@ -18,7 +18,7 @@ class ProductController extends Controller
     {
         $data['products'] = Product::All();
         //dd($products);
-        return view('backend.product.index', $data);
+        return view('backend.product.index', $data); // return view te only 1ta variable pass kora jay
     }
 
     /**
