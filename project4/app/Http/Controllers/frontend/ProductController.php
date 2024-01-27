@@ -32,7 +32,7 @@ class ProductController extends Controller
                 "name" => $product->name,
                 "quantity" => 1,
                 "price" => $product->price,
-                "image" => $product->image
+                "image" => $product->image,
             ];
         }
           

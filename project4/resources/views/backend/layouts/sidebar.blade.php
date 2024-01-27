@@ -51,6 +51,25 @@
           </li>
         </ul>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#brand-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Brand Manage</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="brand-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="{{URL('brand')}}">
+              <i class="bi bi-circle"></i><span>All Brands</span>
+            </a>
+          </li>
+          <li>
+            <!-- <a href="{{URL('product/create')}}"> path after click New Products -->
+            <a href="{{URL('brand/create')}}">
+              <i class="bi bi-circle"></i><span>New Brand</span>
+            </a>
+          </li>
+        </ul>
+      </li>
        <!-- End Category Nav -->
 
       <li class="nav-item">

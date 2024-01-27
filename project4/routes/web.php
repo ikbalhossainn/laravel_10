@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;  // need to add
+use App\Http\Controllers\BrandController; // automatically add after Route
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\ProductController; // need to add for cart
 use App\Http\Controllers\ProfileController;
@@ -63,5 +64,6 @@ Route::get('add-to-cart/{id}', [ProductController::class, 'addToCart'])->name('a
 Route::patch('update-cart', [ProductController::class, 'update'])->name('update.cart');
 Route::delete('remove-from-cart', [ProductController::class, 'remove'])->name('remove.from.cart');
 
+Route::resource('brand', BrandController::class);
 
 require __DIR__.'/auth.php';
