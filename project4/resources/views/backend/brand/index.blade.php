@@ -33,19 +33,20 @@
 
                         <table class="table table-bordered">
                             <tr>
-                                <th>No</th>
-                                <th>Logo</th>
+                                <th>NO</th>
                                 <th>Name</th>
+                                <th>Logo</th>
                                 <th>Description</th>
                                 <th width="280px">Action</th>
                             </tr>
                             @foreach ($brands as $brand)
                             <tr>
                                 <td>{{ ++$i }}</td>
-                                <td>
-                                        <img src="{{asset('images/'.$brand->logo)}}" width="60px" alt="">
-                                    </td>
+
                                 <td>{{ $brand->name }}</td>
+                                <td>
+                                    <img src="{{asset('images/'.$brand->logo)}}" width="60px" alt="">
+                                </td>
                                 <td>{{ $brand->description }}</td>
                                 <td>
                                     <form action="{{ route('brand.destroy',$brand->id) }}" method="POST">
@@ -65,7 +66,7 @@
                         </table>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
