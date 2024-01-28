@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Controllers\DataController; // need to add
+use App\Http\Controllers\ItemController; // need to add
+use App\Http\Controllers\RoleController; // need to add
+use App\Http\Controllers\UserController; // need to add
+use Illuminate\Support\Facades\Auth; // need to add
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +28,9 @@ Route::get("list-products", [DataController::class, "listProducts"]);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resources([
+    'roles' => RoleController::class,
+    'users' => UserController::class,
+    'products' => ItemController::class,
+]);
