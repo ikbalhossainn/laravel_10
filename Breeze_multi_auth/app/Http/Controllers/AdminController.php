@@ -14,9 +14,10 @@ class AdminController extends Controller
     public function login(Request $request){
         // dd($request->all());
         if(Auth::guard('admin')->attempt(['email'=>$request->email, 'password'=>$request->password])){
-            echo "Yes";
+            return view('admin/dashboard');
         } else {
-            echo "Wrong";
+            return redirect('admin/login'); // url . diye hoy na
+            // return redirect(route('admin_login_form'))
         }
 
     }
