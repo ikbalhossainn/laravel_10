@@ -4,6 +4,7 @@ namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category; // to add category here
+use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -119,11 +120,13 @@ class ProductController extends Controller
     }
 
     public function order(Request $request){
-        $all_data = $request->all();
-        print_r($all_data);
+        $order = new Order();
+        $order_data = $request->all();
+        print_r($order_data);
         $carts = session('cart');
         print_r($carts);
-
+        $order_data['coupon'] = '100';
+        $order_data['shipping_id'] = '15';
         
 
     }
