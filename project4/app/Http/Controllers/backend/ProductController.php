@@ -128,6 +128,5 @@ class ProductController extends Controller
         $order_data['coupon'] = '100';
         $order_data['shipping_id'] = '15';
         
-
     }
 }
