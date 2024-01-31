@@ -121,6 +121,10 @@ class ProductController extends Controller
     public function order(Request $request){
         $all_data = $request->all();
         print_r($all_data);
+        $carts = session('cart');
+        print_r($carts);
+
+        
 
     }
 }
