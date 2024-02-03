@@ -122,13 +122,20 @@ class ProductController extends Controller
     public function order(Request $request){
         $order = new Order();
         $order_data = $request->all();
-        $order_data['order_number'] = "ORD" . rand
-        print_r($order_data);
-        $order->save();
+        $order_data['order_number'] = "ORD" . rand(5, 5000);
+        $order_data['quantity'] = 1;
+        $order_data['country'] = 'Bangladesh';
+        // print_r($order_data);
+        $order->create($order_data);
+
+        session_unset();
+        print_r(session('cart'));
         // $carts = session('cart');
         // print_r($carts);
         // $order_data['coupon'] = '100';
         // $order_data['shipping_id'] = '15';
+
+
         
     }
 }
