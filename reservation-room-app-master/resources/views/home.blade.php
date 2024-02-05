@@ -27,12 +27,10 @@
                 Best Bed
             </x-slot>
             <x-slot name="title">
-                Lorem Ipsum
+                Description
             </x-slot>
             <x-slot name="desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident laboriosam reiciendis aut nam
-                molestiae nesciunt similique tempore, placeat vel, commodi quam neque, nostrum vitae repellendus velit
-                laudantium fuga sapiente ea?
+                It's a luxurious room for relaxation with lots of facilities like Morning Refreshment, Lunch, Evening Snacks & Dinner.
             </x-slot>
         </x-medium-cards>
 
@@ -44,12 +42,10 @@
                 Best Room
             </x-slot>
             <x-slot name="title">
-                Lorem Ipsum
+                Description
             </x-slot>
             <x-slot name="desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident laboriosam reiciendis aut nam
-                molestiae nesciunt similique tempore, placeat vel, commodi quam neque, nostrum vitae repellendus velit
-                laudantium fuga sapiente ea?
+                It's a luxurious room for relaxation with lots of facilities like Morning Refreshment, Lunch, Evening Snacks & Dinner.
             </x-slot>
         </x-medium-cards>
 
@@ -61,12 +57,10 @@
                 Best Bed
             </x-slot>
             <x-slot name="title">
-                Lorem Ipsum
+                Description
             </x-slot>
             <x-slot name="desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident laboriosam reiciendis aut nam
-                molestiae nesciunt similique tempore, placeat vel, commodi quam neque, nostrum vitae repellendus velit
-                laudantium fuga sapiente ea?
+                It's a luxurious room for relaxation with lots of facilities like Morning Refreshment, Lunch, Evening Snacks & Dinner.
             </x-slot>
         </x-medium-cards>
 
@@ -78,12 +72,10 @@
                 Best Bed
             </x-slot>
             <x-slot name="title">
-                Lorem Ipsum
+                Description
             </x-slot>
             <x-slot name="desc">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident laboriosam reiciendis aut nam
-                molestiae nesciunt similique tempore, placeat vel, commodi quam neque, nostrum vitae repellendus velit
-                laudantium fuga sapiente ea?
+                It's a luxurious room for relaxation with lots of facilities like Morning Refreshment, Lunch, Evening Snacks & Dinner.
             </x-slot>
         </x-medium-cards>
     </div>
@@ -110,18 +102,12 @@
             <span class="fab fa-paypal" style="font-size: 4rem"></span>
             <p>Accept Paypal</p>
         </div>
-        <div class="col-sm-4 p-2 text-center">
-            <img src="{{asset('')}}" alt="">
-            <p>Accept Paypal</p>
-        </div>
     </div>
     <article class="my-3">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis animi asperiores at! Ipsa dolore quo
-            cumque sequi laudantium deleniti in autem. Necessitatibus recusandae ad id praesentium! Dolorem blanditiis
-            molestias iusto.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quidem, rerum facere unde aut veritatis
-            culpa, quam non sint, reiciendis ut minima quas totam quasi esse possimus quo pariatur quos!
+            Welcome to Hotel Sunset Lodge, where luxury meets tranquility. Nestled in the heart of breathtaking landscapes, our hotel is the epitome of comfort and sophistication. Whether you're seeking a relaxing getaway, a business retreat, or a romantic escape, our dedicated team is committed to ensuring a memorable experience for every guest.
+
+            Conveniently located [mention location details], Hotel Sunset Lodge provides easy access to nearby attractions, making it an ideal choice for both leisure and business travelers.
         </p>
     </article>
 </div>
