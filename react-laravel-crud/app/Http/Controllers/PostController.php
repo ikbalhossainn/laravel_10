@@ -25,7 +25,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Posts/Create');
     }
 
     /**
@@ -33,7 +33,14 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Validator::make($request->all(), [
+            'title' => ['required'],
+            'body' => ['required'],
+        ])->validate();
+   
+        Post::create($request->all());
+    
+        return redirect()->route('posts.index');
     }
 
     /**
@@ -65,6 +72,9 @@ class PostController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        {
+            Post::find($id)->delete();
+            return redirect()->route('posts.index');
+        }
     }
 }
