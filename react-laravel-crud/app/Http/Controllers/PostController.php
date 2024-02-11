@@ -54,19 +54,26 @@ class PostController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Post $post)
     {
-        //
+        return Inertia::render('Posts/Edit', [
+            'post' => $post
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update($id, Request $request)
     {
-        //
+        Validator::make($request->all(), [
+            'title' => ['required'],
+            'body' => ['required'],
+        ])->validate();
+    
+        Post::find($id)->update($request->all());
+        return redirect()->route('posts.index');
     }
-
     /**
      * Remove the specified resource from storage.
      */
