@@ -1,6 +1,6 @@
 import { Head, Link, usePage } from "@inertiajs/react"; // need to import
 import React from "react";
-// import { Inertia } from "@inertiajs/inertia";
+import { Inertia } from "@inertiajs/inertia";
 
 
 
