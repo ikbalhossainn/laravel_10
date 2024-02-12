@@ -1,9 +1,16 @@
 import Footer from '@/Components/Footer' // need to add here
 import Nav from '@/Components/Nav' // need to add here
+import { usePage } from '@inertiajs/inertia-react' // need to add for loop
 import React from 'react'
 
 
-export default function Home() {
+
+export default function Home(props) {
+    // const{posts} = usePage().props;
+    const{posts} = usePage().props;
+    console.log(posts);
+
+
   return (
     <>
 <div>
@@ -14,9 +21,11 @@ export default function Home() {
     </div>
   </div> */}
   {/*PreLoader Ends*/}
+
   {/* header */}
         <Nav/>
   {/* end header */}
+
   {/* search area */}
   <div className="search-area">
     <div className="container">
