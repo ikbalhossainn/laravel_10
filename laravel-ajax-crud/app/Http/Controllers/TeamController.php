@@ -26,4 +26,14 @@ class TeamController extends Controller
         }
         return view('welcome');
     }
+
+    public function store(Request $request)
+    {
+        Team::updateOrCreate(
+            ['id' => $request->id],
+            ['name' => $request->title, 'team_member' => $request->description]
+        );
+
+        return response()->json(['success' => 'Team saved successfully.']);
+    }
 }
