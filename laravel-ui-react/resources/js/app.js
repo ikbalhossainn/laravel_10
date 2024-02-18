@@ -13,3 +13,5 @@ import './bootstrap';
  */
 
 import './components/Example';
+import './components/Home'; // need to add here for Home.jsx
+
