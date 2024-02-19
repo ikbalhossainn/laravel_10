@@ -1,9 +1,11 @@
+import Footer from '@/Components/Footer' // need to add here
+import Header from '@/Components/Header'  // need to add here
 import React from 'react'
 
 export default function About() {
   return (
     <>
-
+            <Header/>
   {/* breadcrumb-section */}
   <div className="breadcrumb-section breadcrumb-bg">
     <div className="container">
@@ -217,6 +219,7 @@ export default function About() {
   </div>
   {/* end logo carousel */}
 
+        <Footer/>
 
     </>
   )
