@@ -1,9 +1,13 @@
 import Footer from '@/Components/Footer'  // need to add here
 import Header from '@/Components/Header'  // need to add here
+import { usePage } from '@inertiajs/react' // need to add when I want to show data in console log
 import React from 'react'
 
 
-export default function Home() {
+export default function Home(props) {
+    const {posts, customers} = usePage().props
+    console.log(posts)
+    console.log(customers)
   return (
     // <div>Home</div>
     <>

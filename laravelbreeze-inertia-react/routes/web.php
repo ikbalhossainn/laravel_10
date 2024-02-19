@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -16,23 +17,28 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Home', [
-        // 'canLogin' => Route::has('login'),
-        // 'canRegister' => Route::has('register'),
-        // 'laravelVersion' => Application::VERSION,
-        // 'phpVersion' => PHP_VERSION,
-    ]);
-});
+// At first we will check the route like bellow built in function for testing purpose before creating Controller 
 
-Route::get('about', function () {
-    return Inertia::render('About', [
-        // 'canLogin' => Route::has('login'),
-        // 'canRegister' => Route::has('register'),
-        // 'laravelVersion' => Application::VERSION,
-        // 'phpVersion' => PHP_VERSION,
-    ]);
-});
+
+// Route::get('/', function () {
+//     return Inertia::render('Home', [
+//         // 'canLogin' => Route::has('login'),
+//         // 'canRegister' => Route::has('register'),
+//         // 'laravelVersion' => Application::VERSION,
+//         // 'phpVersion' => PHP_VERSION,
+//     ]);
+// });
+
+// Now We can create route via controller
+
+Route::get('/', [FrontendController::class, 'index']);
+
+// Route::get('about', function () {
+//     return Inertia::render('About', [
+//     ]);
+// });
+
+Route::get('about', [FrontendController::class, 'about']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
