@@ -38,7 +38,7 @@ class BrandController extends Controller
      */
     public function show(brand $brand)
     {
-        return view
+        // return view
     }
 
     /**
