@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('product', [ProductController::class, 'index']);
+// Route::get('product', [ProductController::class, 'index']);
+
+// Route::get('{any}', function () {
+//     return view('app');
+// })->where('any', '.*');

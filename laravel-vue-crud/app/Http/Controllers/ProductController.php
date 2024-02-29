@@ -10,8 +10,8 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all()->toArray();
-        $x = array_reverse($products);
-        dd($x);
+        // $x = array_reverse($products);
+        // dd($x);
         return array_reverse($products);      
     }
 }
