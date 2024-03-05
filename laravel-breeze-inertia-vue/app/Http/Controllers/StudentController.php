@@ -13,8 +13,9 @@ class StudentController extends Controller
      */
     public function index()
     {
+        $students = Student::all();
         return Inertia::render(
-            'Students/Index'
+            'Students/Index' , compact('students')    
         );
     }
 
@@ -63,6 +64,6 @@ class StudentController extends Controller
      */
     public function destroy(Student $student)
     {
-        //
+        $student->delete();
     }
 }

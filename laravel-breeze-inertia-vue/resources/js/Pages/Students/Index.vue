@@ -1,3 +1,17 @@
+<script setup>
+import {usePage, useForm} from '@inertiajs/vue3'
+
+    
+    const{students} = usePage().props
+    // console.log(students);
+
+    const form = useForm({})
+    function del(id){
+        if(confirm("Are you sure to delete"))
+            form.delete(route('students.destroy'),id)
+    }
+</script>
+
 <template>
     <div class="container">
         <table class="table">
@@ -11,14 +25,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Ikbal Hossain</td>
-                    <td>ikbalhossain125@gmail.com</td>
-                    <td>+8801723-835125</td>
+                <tr  v-for="student in students">
+                    <th scope="row">{{ student.id }}</th>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.email }}</td>
+                    <td>{{ student.phone }}</td>
                     <td>
-                        <button class="btn btn-success">Edit</button>
-                        <button class="btn btn-danger">Delete</button>
+                        <button class="btn btn-success">Edit</button> |
+                        <button class="btn btn-danger" @click="del(student.id)">Delete</button>
                     </td>
                 </tr>
             </tbody>
