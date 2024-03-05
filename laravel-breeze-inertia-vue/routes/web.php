@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogController; // need to add here
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -37,5 +38,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('blogs',BlogController::class)->middleware(['auth', 'verified']);
+Route::resource('students',StudentController::class)->middleware(['auth', 'verified']);
 
 require __DIR__.'/auth.php';

@@ -8,7 +8,10 @@ const props = defineProps({
         type: Object,
         default: () => ({}),
     },
+  
 });
+
+
 const form = useForm({});
 
 function destroy(id) {
