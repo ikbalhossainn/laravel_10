@@ -36,6 +36,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource('blogs',BlogController::class);
+Route::resource('blogs',BlogController::class)->middleware(['auth', 'verified']);
 
 require __DIR__.'/auth.php';
