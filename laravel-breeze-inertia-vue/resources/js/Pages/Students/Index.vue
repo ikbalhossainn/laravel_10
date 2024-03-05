@@ -1,15 +1,15 @@
 <script setup>
-import {usePage, useForm} from '@inertiajs/vue3'
+import { usePage, useForm } from "@inertiajs/vue3";
 
-    
-    const{students} = usePage().props
-    // console.log(students);
+const { students } = usePage().props;
+// console.log(students);
 
-    const form = useForm({})
-    function del(id){
-        if(confirm("Are you sure to delete"))
-            form.delete(route('students.destroy'),id)
+const form = useForm({});
+function del(id) {
+    if (confirm("Are you sure to delete")) {
+        form.delete(route("students.destroy", id));
     }
+}
 </script>
 
 <template>
@@ -25,14 +25,16 @@ import {usePage, useForm} from '@inertiajs/vue3'
                 </tr>
             </thead>
             <tbody>
-                <tr  v-for="student in students">
+                <tr v-for="student in students">
                     <th scope="row">{{ student.id }}</th>
                     <td>{{ student.name }}</td>
                     <td>{{ student.email }}</td>
                     <td>{{ student.phone }}</td>
                     <td>
                         <button class="btn btn-success">Edit</button> |
-                        <button class="btn btn-danger" @click="del(student.id)">Delete</button>
+                        <button class="btn btn-danger" @click="del(student.id)">
+                            Delete
+                        </button>
                     </td>
                 </tr>
             </tbody>
