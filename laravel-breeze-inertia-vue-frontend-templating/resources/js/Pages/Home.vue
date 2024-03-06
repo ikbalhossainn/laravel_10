@@ -12,31 +12,22 @@
     import Team from '@/Components/Team.vue';
     import Blog from '@/Components/Blog.vue';
     import Footer from '@/Components/Footer.vue';
+    import FrontendLayout from '@/Layouts/FrontendLayout.vue';
 
 </script>
 <template>
     <div>
+        <!-- Top Header Start -->
+                <!-- <TopHeader /> -->
+        <!-- Top Header End -->
+        <FrontendLayout>
          <!-- PreLoader Start -->
-         <!-- <div class="preloader">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="sk-cube-area">
-                        <div class="sk-cube1 sk-cube"></div>
-                        <div class="sk-cube2 sk-cube"></div>
-                        <div class="sk-cube4 sk-cube"></div>
-                        <div class="sk-cube3 sk-cube"></div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+ 
         <!-- PreLoader End -->
 
-        <!-- Top Header Start -->
-                <TopHeader />
-        <!-- Top Header End -->
 
         <!-- Start Navbar Area -->
-                <Navbar />
+                <!-- <Navbar /> -->
         <!-- End Navbar Area -->
 
         <!-- Banner Area -->
@@ -84,7 +75,8 @@
         <!-- Blog Area End -->
 
         <!-- Footer Area -->
-            <Footer />
+            <!-- <Footer /> -->
         <!-- Footer Area End -->
+    </FrontendLayout>
     </div>
 </template>
