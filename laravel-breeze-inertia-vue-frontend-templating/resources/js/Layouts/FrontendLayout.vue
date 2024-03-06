@@ -64,11 +64,11 @@ import { Link } from '@inertiajs/vue3';
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active">
+                                    <Link href="/" class="nav-link active">
                                         Home 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
+                                        <!-- <i class='bx bx-chevron-down'></i> -->
+                                    </Link>
+                                    <!-- <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <a href="index.html" class="nav-link active">
                                                 Home One  
@@ -84,12 +84,12 @@ import { Link } from '@inertiajs/vue3';
                                                 Home Three
                                             </a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about.html" class="nav-link">
+                                    <Link :href="route('about')" class="nav-link">
                                         About
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -250,9 +250,9 @@ import { Link } from '@inertiajs/vue3';
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">
+                                    <Link :href="route('contact')" class="nav-link">
                                         Contact
-                                    </a>
+                                    </Link>
                                 </li>
 
                                 <li class="nav-item-btn">
@@ -271,7 +271,7 @@ import { Link } from '@inertiajs/vue3';
     </div>
    <!-- End Navbar -->
    <slot />
-   
+
    <!-- Footer -->
    <footer class="footer-area footer-bg">
             <div class="container">
