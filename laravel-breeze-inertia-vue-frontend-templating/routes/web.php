@@ -87,6 +87,63 @@ Route::get('service-details', function(){
 })->name('service-details');
 
 
+// Pages
+Route::get('book', function(){
+    return Inertia::render('Booking');
+})->name('book');
+
+Route::get('team', function(){
+    return Inertia::render('Team');
+})->name('team');
+
+Route::get('faq', function(){
+    return Inertia::render('FAQ');
+})->name('faq');
+
+Route::get('restaurant', function(){
+    return Inertia::render('Restaurant');
+})->name('restaurant');
+
+Route::get('reservation', function(){
+    return Inertia::render('Reservation');
+})->name('reservation');
+
+Route::get('gallery', function(){
+    return Inertia::render('Gallery');
+})->name('gallery');
+
+Route::get('testimonials', function(){
+    return Inertia::render('Testimonials');
+})->name('testimonials');
+
+Route::get('checkout', function(){
+    return Inertia::render('CheckOut');
+})->name('checkout');
+
+Route::get('sign-in', function(){
+    return Inertia::render('SignIn');
+})->name('sign-in');
+
+Route::get('sign-up', function(){
+    return Inertia::render('SignUp');
+})->name('sign-up');
+
+Route::get('terms-condition', function(){
+    return Inertia::render('Terms&Condition');
+})->name('terms-condition');
+
+Route::get('privacy-policy', function(){
+    return Inertia::render('PrivacyPolicy');
+})->name('privacy-policy');
+
+Route::get('404', function(){
+    return Inertia::render('404Page');
+})->name('404');
+
+Route::get('coming-soon', function(){
+    return Inertia::render('ComingSoon');
+})->name('coming-soon');
+
 
 
 require __DIR__.'/auth.php';
