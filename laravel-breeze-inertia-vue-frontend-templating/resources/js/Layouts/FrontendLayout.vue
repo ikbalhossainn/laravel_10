@@ -189,19 +189,19 @@ import { Link } from '@inertiajs/vue3';
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="services-1.html" class="nav-link">
+                                            <Link :href="route('services-1')" class="nav-link">
                                                 Services Style One 
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="services-2.html" class="nav-link">
+                                            <Link :href="route('services-2')" class="nav-link">
                                                 Services Style Two 
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="service-details.html" class="nav-link">
+                                            <Link :href="route('service-details')" class="nav-link">
                                                 Service Details 
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -213,19 +213,19 @@ import { Link } from '@inertiajs/vue3';
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="blog-1.html" class="nav-link">
+                                            <Link :href="route('blog-1')" class="nav-link">
                                                 Blog Style One 
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-2.html" class="nav-link">
+                                            <Link :href="route('blog-2')" class="nav-link">
                                                 Blog Style Two 
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">
+                                            <Link :href="route('blog-details')" class="nav-link">
                                                 Blog Details 
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
