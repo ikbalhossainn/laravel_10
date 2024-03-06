@@ -35,6 +35,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Frontend
 Route::get('/', function(){
     return Inertia::render('Home');
 });
@@ -46,5 +47,13 @@ Route::get('about', function(){
 Route::get('contact', function(){
     return Inertia::render('Contact');
 })->name('contact');
+
+// Rooms
+Route::get('room', function(){
+    return Inertia::render('Room');
+})->name('room');
+Route::get('room-details', function(){
+    return Inertia::render('RoomDetails');
+})->name('room-details');
 
 require __DIR__.'/auth.php';

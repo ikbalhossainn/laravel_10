@@ -237,14 +237,14 @@ import { Link } from '@inertiajs/vue3';
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="room.html" class="nav-link">
+                                            <Link :href="route('room')" class="nav-link">
                                                 Rooms 
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="room-details.html" class="nav-link">
+                                            <Link :href="route('room-details')" class="nav-link">
                                                 Room Details 
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
