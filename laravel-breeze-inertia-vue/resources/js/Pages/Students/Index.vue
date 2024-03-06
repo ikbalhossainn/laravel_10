@@ -1,5 +1,6 @@
 <script setup>
 import { usePage, useForm } from "@inertiajs/vue3";
+import FrontendLayout from "@/Layouts/FrontendLayout.vue";
 
 const { students } = usePage().props;
 // console.log(students);
@@ -13,6 +14,7 @@ function del(id) {
 </script>
 
 <template>
+    <FrontendLayout>
     <div class="container">
         <table class="table">
             <thead>
@@ -40,6 +42,7 @@ function del(id) {
             </tbody>
         </table>
     </div>
+    </FrontendLayout>
 </template>
 
 <script>

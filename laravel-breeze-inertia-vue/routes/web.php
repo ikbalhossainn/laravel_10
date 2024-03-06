@@ -31,6 +31,10 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/about', function () {
+    return Inertia::render('About');
+})->middleware(['auth', 'verified'])->name('about');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -39,5 +43,7 @@ Route::middleware('auth')->group(function () {
 
 Route::resource('blogs',BlogController::class)->middleware(['auth', 'verified']);
 Route::resource('students',StudentController::class)->middleware(['auth', 'verified']);
+
+
 
 require __DIR__.'/auth.php';

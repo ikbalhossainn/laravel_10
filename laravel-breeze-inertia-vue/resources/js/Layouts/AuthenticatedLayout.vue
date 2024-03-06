@@ -1,3 +1,5 @@
+// all type of navigation are used here
+
 <script setup>
 import { ref } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
@@ -31,6 +33,9 @@ const showingNavigationDropdown = ref(false);
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
+                                </NavLink>
+                                <NavLink :href="route('blogs.index')" :active="route().current('blogs.index')">
+                                    Blog
                                 </NavLink>
                             </div>
                         </div>
