@@ -25,7 +25,7 @@ import { Link } from "@inertiajs/vue3";
                                 <i class="bx bx-home-alt"></i>
                                 <a href="#"
                                     >DIT Road 2/1 East Rampura Lift 10 AlKaderia
-                                    Restaurant Building, 1219 Dhaka,</a
+                                    Restaurant Building, 1219 Dhaka</a
                                 >
                             </li>
                             <li>
@@ -392,25 +392,25 @@ import { Link } from "@inertiajs/vue3";
                                 </a>
                             </div>
                             <p>
-                                Aenean finibus convallis nisl sit amet
-                                hendrerit. Etiam blandit velit non lorem mattis,
-                                non ultrices eros bibendum .
+                                Hotel Rose Garden is one of the best hotel located in dhaka which offer best service based on its reasonable price.
                             </p>
                             <ul class="footer-list-contact">
                                 <li>
                                     <i class="bx bx-home-alt"></i>
-                                    <a href="#">123 Stanton, Virginia, USA</a>
-                                </li>
-                                <li>
-                                    <i class="bx bx-phone-call"></i>
-                                    <a href="tel:+1-(123)-456-7890"
-                                        >+1 (123) 456 7890</a
+                                    <a href="#"
+                                        >>DIT Road 2/1 East Rampura Lift 10
+                                        AlKaderia Restaurant Building,
+                                        Dhaka 1219</a
                                     >
                                 </li>
                                 <li>
+                                    <i class="bx bx-phone-call"></i>
+                                    <a href="tel:+880 1723-835125">+8801723-835125</a>
+                                </li>
+                                <li>
                                     <i class="bx bx-envelope"></i>
-                                    <a href="mailto:hello@atoli.com"
-                                        >hello@atoli.com</a
+                                    <a href="mailto:rosegarden@gmail.com"
+                                        >rosegarden@gmail.com</a
                                     >
                                 </li>
                             </ul>
@@ -515,9 +515,10 @@ import { Link } from "@inertiajs/vue3";
                         <div class="footer-widget">
                             <h3>Newsletter</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nullam tempor eget ante
-                                fringilla rutrum aenean sed venenatis .
+                                Overall, email newsletters are a powerful tool
+                                for connecting with your target audience,
+                                building your brand, and achieving your
+                                marketing goals.
                             </p>
                             <div class="footer-form">
                                 <form
