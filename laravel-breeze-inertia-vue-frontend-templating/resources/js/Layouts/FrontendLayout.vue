@@ -24,13 +24,13 @@ import { Link } from "@inertiajs/vue3";
                             <li>
                                 <i class="bx bx-home-alt"></i>
                                 <a href="#"
-                                    >DIT Road 2/1 East Rampura Lift 10 AlKaderia
-                                    Restaurant Building, 1219 Dhaka</a
+                                    >DIT Road, 2/1 East Rampura, Lift 10 AlKaderia
+                                    Restaurant Building, Dhaka 1219</a
                                 >
                             </li>
                             <li>
                                 <i class="bx bx-phone-call"></i>
-                                <a href="tel: 0924887766">+8801723-835125</a>
+                                <a href="tel: +8801723-835125">+8801723-835125</a>
                             </li>
                             <li>
                                 <i class="bx bx-envelope"></i>
@@ -410,7 +410,7 @@ import { Link } from "@inertiajs/vue3";
                                 <li>
                                     <i class="bx bx-envelope"></i>
                                     <a href="mailto:rosegarden@gmail.com"
-                                        >rosegarden@gmail.com</a
+                                        >rosegarden.bd@gmail.com</a
                                     >
                                 </li>
                             </ul>
